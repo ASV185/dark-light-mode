@@ -4,36 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-    <title>Dark/Light Mode Profile</title>
+    <title>Light/Dark Mode Profile</title>
 </head>
 
 <body>
     <div class="container-xl">
-        <h1 class="text-center mb-2">My Profile</h1>
         <div class="row">
             <div class="col-4 mt-4">
                 <div class="container">
                     <article>
-                        <img src="images/profile2.jpg" class="profile img-fluid w-50 h-50" alt="profile image"
-                            title="profile image" />
-                        <h3>Mandy Yu</h3>
-                        <h5>Biography</h5>
-                        <h5>Friends</h5>
-                        <h5>Reminders</h5>
-                        <h5>Posts</h5>
-                        <h5>Account Settings</h5>
-                        <h5>Sign Out</h5>
+                        <section class="box bg-secondary bg-gradient text-dark bg-opacity-25 text-center">
+                            <img src="images/profile2.jpg" class="profile img-fluid w-50 h-50" alt="profile image"
+                                title="profile image" />
+                            <h2 class="mt-3 title is-3">Mandy Yu</h2>
+                            <h3 class="m-0 subtitle is-5">@mandyyu7</h3>
+                        </section>
+                        <section class="box bg-secondary bg-gradient text-dark bg-opacity-25 text-center">
+                            <div class="control">
+                                <div class="select">
+                                    <select>
+                                        <option>
+                                            <a href="#" class="dropdown-item">
+                                                <h5 class="m-2 title is-5">Mandy Yu</h5>
+                                            </a>
+                                        </option>
+                                        <option>
+                                            <a href="#" class="dropdown-item">
+                                                <h5 class="m-2 title is-5">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-person-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                                    </svg>
+                                                    Biography
+                                                </h5>
+                                            </a>
+                                        </option>
+                                        <option>
+                                            <a href="#" class="dropdown-item">
+                                                <h5 class="m-2 title is-5">Friends</h5>
+                                            </a>
+                                        </option>
+                                        <option>
+                                            <a href="#" class="dropdown-item">
+                                                <h5 class="m-2 title is-5">Reminders</h5>
+                                            </a>
+                                        </option>
+                                        <option>
+                                            <a href="#" class="dropdown-item">
+                                                <h5 class="m-2 title is-5">Posts</h5>
+                                            </a>
+                                        </option>
+                                        <option>
+                                            <a href="#" class="dropdown-item">
+                                                <h5 class="m-2 title is-5">Account Settings</h5>
+                                            </a>
+                                        </option>
+                                        <option>
+                                            <a href="#" class="dropdown-item">
+                                                <h5 class="m-3 title is-5">Sign Out</h5>
+                                            </a>
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </section>
                     </article>
                 </div>
             </div>
             <div class="col-4">
-                <div class="container">
-                    <article>
-                        <h2>Biography</h2>
+                <div class="container mt-3">
+                    <article class="box bg-secondary bg-gradient text-dark bg-opacity-25">
+                        <h1 class="title is-3">Biography</h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna
@@ -45,95 +94,267 @@
                             laborum.
                         </p>
                     </article>
-                    <article>
-                        <h3>Post</h3>
-                        <section class="d-flex justify-content-evenly">
-                            <img src="images/profile5.jpg" class="profile-image h-25 w-25" id="profile image"
-                                alt="profile image" />
-                            <p class="p-2">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip
-                                ex ea commodo consequat.
-                            </p>
-                        </section>
-                    </article>
-                    <article>
-                        <h3>Post</h3>
-                        <section class="d-flex justify-content-evenly">
-                            <img src="images/profile6.jpg" class="profile-image h-25 w-25" id="profile image"
-                                alt="profile image" />
-                            <p class="p-2">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip
-                                ex ea commodo consequat.
-                            </p>
-                        </section>
-                    </article>
-                    <article>
-                        <h3>Post</h3>
-                        <section class="d-flex justify-content-evenly">
-                            <img src="images/profile4.jpg" class="profile-image h-25 w-25" id="profile image"
-                                alt="profile image" />
-                            <p class="p-2">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip
-                                ex ea commodo consequat.
-                            </p>
-                        </section>
-                    </article>
-                    <article>
-                        <h3>Post</h3>
-                        <section class="d-flex justify-content-evenly">
-                            <img src="images/profile1.jpg" class="profile-image h-25 w-25" id="profile image"
-                                alt="profile image" />
-                            <p class="p-2">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip
-                                ex ea commodo consequat.
-                            </p>
-                        </section>
-                    </article>
+                    <div class="box bg-secondary bg-gradient text-dark bg-opacity-25">
+                        <article class="media">
+                            <div class="media-left">
+                                <figure class="image is-64x64">
+                                    <img src="images/profile5.jpg" alt="Profile Image" id="Profile Image"
+                                        class="profileimg">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <strong>Melissa Rodriguez</strong> <small>@melissarodriguez12</small>
+                                        <small>31m</small>
+                                        <br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit
+                                        amet massa fringilla
+                                        egestas. Nullam condimentum luctus turpis.
+                                    </p>
+                                </div>
+                                <nav class="level is-mobile">
+                                    <div class="level-left">
+                                        <a class="level-item" aria-label="reply">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-reply" aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                        <a class="level-item" aria-label="retweet">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-retweet" aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                        <a class="level-item" aria-label="like">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-heart" aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="box bg-secondary bg-gradient text-dark bg-opacity-25">
+                        <article class="media">
+                            <div class="media-left">
+                                <figure class="image is-64x64">
+                                    <img src="images/profile6.jpg" alt="Profile Image" id="Profile Image"
+                                        class="profileimg">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <strong>John Smith</strong> <small>@johnsmith</small> <small>50m</small>
+                                        <br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit
+                                        amet massa fringilla
+                                        egestas. Nullam condimentum luctus turpis.
+                                    </p>
+                                </div>
+                                <nav class="level is-mobile">
+                                    <div class="level-left">
+                                        <a class="level-item" aria-label="reply">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-reply" aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                        <a class="level-item" aria-label="retweet">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-retweet" aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                        <a class="level-item" aria-label="like">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-heart" aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="box bg-secondary bg-gradient text-dark bg-opacity-25">
+                        <article class="media">
+                            <div class="media-left">
+                                <figure class="image is-64x64">
+                                    <img src="images/profile4.jpg" alt="Profile Image" id="Profile Image"
+                                        class="profileimg">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <strong>Christopher Mills</strong> <small>@chrismill45</small>
+                                        <small>2hrs</small>
+                                        <br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit
+                                        amet massa fringilla
+                                        egestas. Nullam condimentum luctus turpis.
+                                    </p>
+                                </div>
+                                <nav class="level is-mobile">
+                                    <div class="level-left">
+                                        <a class="level-item" aria-label="reply">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-reply" aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                        <a class="level-item" aria-label="retweet">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-retweet" aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                        <a class="level-item" aria-label="like">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-heart" aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="box bg-secondary bg-gradient text-dark bg-opacity-25">
+                        <article class="media">
+                            <div class="media-left">
+                                <figure class="image is-64x64">
+                                    <img src="images/profile1.jpg" alt="Profile Image" id="Profile Image"
+                                        class="profileimg">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <strong>Sandra Puentes</strong> <small>@sandrapuentes</small> <small>42m</small>
+                                        <br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit
+                                        amet massa fringilla
+                                        egestas. Nullam condimentum luctus turpis.
+                                    </p>
+                                </div>
+                                <nav class="level is-mobile">
+                                    <div class="level-left">
+                                        <a class="level-item" aria-label="reply">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-reply" aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                        <a class="level-item" aria-label="retweet">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-retweet" aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                        <a class="level-item" aria-label="like">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-heart" aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
             <div class="col-4">
-                <div class="container">
-                    <article>
-                        <h3>Suggestion Friends</h3>
-                        <section class="d-flex justify-content-evenly">
+                <div class="container mt-3">
+                    <article class="box bg-secondary bg-gradient text-dark bg-opacity-25">
+                        <h3 class="mb-2 title is-4">Suggestion Friends:</h3>
+                        <section class="d-flex justify-content-evenly box">
+                            <button class="button is-normal is-responsive is-light">
+                                Add Friend
+                            </button>
                             <img src="images/profile7.jpg" class="profile-image h-25 w-25" id="profile image"
                                 alt="profile image" />
-                            <h4>Leslie Mendoza</h4>
+                            <h4 class="title is-6">Leslie Ruiz</h4>
+                            <button class="delete"></button>
                         </section>
                         <br>
-                        <section class="d-flex justify-content-evenly mb-2">
+                        <section class="d-flex justify-content-evenly box mb-4">
+                            <button class="button is-normal is-responsive is-light">
+                                Add Friend
+                            </button>
                             <img src="images/profile3.jpg" class="profile-image h-25 w-25" id="profile image"
                                 alt="profile image" />
-                            <h4>Natalie Green</h4>
+                            <h4 class="title is-6">Natalie Green</h4>
+                            <button class="delete"></button>
                         </section>
                     </article>
-                    <article>
-                        <h3>Reminders:</h3>
-                        <h5>Check Birthdays</h5>
-                        <h5>Post Daily</h5>
-                        <h5>Message Cassandra</h5>
-                        <h5>Don't Forget to Delete Drafts</h5>
+                    <article class="box bg-secondary bg-gradient text-dark bg-opacity-25">
+                        <h3 class="title is-4">Reminders:</h3>
+                        <h5 class="title is-6">Check Birthdays</h5>
+                        <h5 class="title is-6">Post Daily</h5>
+                        <h5 class="title is-6">Message Cassandra</h5>
+                        <h5 class="title is-6">Don't Forget to Delete Drafts</h5>
+                    </article>
+                    <nav class="level box bg-secondary bg-gradient text-dark bg-opacity-25">
+                        <div class="level-item has-text-centered">
+                            <div>
+                                <p class="heading">Tweets</p>
+                                <p class="title">1,750</p>
+                            </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                            <div>
+                                <p class="heading">Following</p>
+                                <p class="title">123</p>
+                            </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                            <div>
+                                <p class="heading">Followers</p>
+                                <p class="title">1K</p>
+                            </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                            <div>
+                                <p class="heading">Likes</p>
+                                <p class="title">790</p>
+                            </div>
+                        </div>
+                    </nav>
+                    <article class="media bg-secondary bg-gradient text-dark bg-opacity-25">
+                        <figure class="media-left">
+                            <p class="image is-128x128 align-self-center">
+                                <img src="images/profile2.jpg" class="profile img-fluid w-50 h-50 m-3"
+                                    alt="profile image" title="profile image" />
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="field">
+                                <p class="control">
+                                    <textarea class="textarea" placeholder="Add a comment..."></textarea>
+                                </p>
+                            </div>
+                            <nav class="level">
+                                <div class="level-left">
+                                    <div class="level-item">
+                                        <a class="button is-info mb-2">Submit</a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
                     </article>
                 </div>
             </div>
         </div>
     </div>
+    <footer class="text-center bg-dark">
+        <div class="open-sourced text-center text-black p-2">
+            <div class="row text-light">
+                <a href="https://github.com/ASV185/NGO-page" class="text-light text-decoration-none">
+                    Open-sourced code
+                </a>
+                <br>
+                <span>
+                    by Amanda Ventura, images from Vladislav Todorov, Rick Gebhardt, Matheus Ferrero, Cesar Rincon,
+                    Christopher Campbell,
+                    Kimson Doan, and Michael Dam.
+                </span>
+            </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
